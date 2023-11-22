@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comics-world-store!</title>
+</head>
+<body>
+    <a-scene id="comics">
+        <!--sky-->
+        <a-sky id="sky" radius="5000" color="#98DAFC"></a-sky>
+        <a-entity id="comics-store" store></a-entity>
+        <!--camara-->
+        <a-camara id="camara" wasd-controls="enabled:false">
+            <a-entity
+            id="app-title"
+            position="0 4 0"
+            text="font: exo2bold;align: center;width:2;color:#983464;value:comics store">
+            <a-entity 
+            id="app-subtitle"
+            position="9 3 0"
+            text="font:exo2bold;align:center;width:1;color:#135576;value:let's buy comics"></a-entity>
+        </a-entity>
+        <a-plane
+        id="ground"
+        width="200"
+        height="100"
+        color="#78909c"
+        position="-90 0 0"
+        ></a-plane>
+        </a-camara>
+    </a-scene>
+</body>
+</html>
